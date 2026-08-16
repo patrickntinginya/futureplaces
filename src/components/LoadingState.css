@@ -1,0 +1,31 @@
+.loading-state {
+  padding: 4px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.loading-state__message {
+  font-size: 13.5px;
+}
+
+.loading-state__card {
+  overflow: hidden;
+}
+
+.loading-state__image {
+  aspect-ratio: 16 / 10;
+  border-radius: 0;
+}
+
+.loading-state__body {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.loading-state__line {
+  height: 12px;
+  border-radius: 6px;
+}

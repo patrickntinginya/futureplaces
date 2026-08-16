@@ -1,0 +1,103 @@
+.map-view {
+  position: relative;
+}
+
+.map-view__canvas {
+  position: relative;
+  height: 340px;
+  margin: 0 16px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #e7f4ee 0%, #dcf0e6 100%);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background-image:
+    linear-gradient(rgba(8, 127, 91, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8, 127, 91, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.map-view__empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  font-size: 13px;
+}
+
+.map-view__pin {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  background: none;
+  border: none;
+  padding: 0;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.25));
+  transition: transform 0.15s ease;
+}
+
+.map-view__pin.is-active {
+  z-index: 2;
+}
+
+.map-view__pin.is-active svg {
+  background: var(--green-primary);
+  border-radius: 50% 50% 50% 0;
+}
+
+.map-view__you {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.map-view__you-dot {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #1971c2;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 4px rgba(25, 113, 194, 0.25);
+}
+
+.map-view__sheet {
+  margin: 12px 16px 0;
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  position: relative;
+}
+
+.map-view__sheet-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--bg);
+  border: none;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-view__sheet-img {
+  width: 76px;
+  height: 76px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.map-view__sheet-body {
+  flex: 1;
+  min-width: 0;
+  padding-right: 20px;
+}
+
+.map-view__sheet-body h4 {
+  font-size: 15px;
+  font-weight: 800;
+}

@@ -1,0 +1,46 @@
+.home__categories {
+  margin-top: 14px;
+}
+
+.home__section {
+  margin-top: 22px;
+}
+
+.home__section-head {
+  margin-bottom: 10px;
+}
+
+.home__horizontal {
+  padding: 0 16px 4px;
+}
+
+.home__horizontal-item {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.home__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.home__cta {
+  margin-top: 26px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: linear-gradient(135deg, var(--green-light), #ffffff);
+}
+
+.home__cta h3 {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.home__cta p {
+  font-size: 12.5px;
+  margin-top: 3px;
+}

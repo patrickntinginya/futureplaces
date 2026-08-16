@@ -1,0 +1,41 @@
+.add-business-form {
+  padding: 4px 16px 24px;
+}
+
+.add-business-form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.add-business-form__grid--three {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 420px) {
+  .add-business-form__grid--three {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+textarea.input {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.add-business-success {
+  margin: 24px 16px;
+  padding: 28px 20px;
+  text-align: center;
+}
+
+.add-business-success h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.add-business-success p {
+  font-size: 13.5px;
+  line-height: 1.5;
+}

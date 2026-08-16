@@ -1,0 +1,42 @@
+.explore__header {
+  padding-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.explore__title {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.explore__toggle {
+  display: flex;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px;
+}
+
+.explore__toggle button {
+  border: none;
+  background: none;
+  padding: 6px 14px;
+  font-size: 12.5px;
+  font-weight: 700;
+  border-radius: 999px;
+  color: var(--text-muted);
+}
+
+.explore__toggle button.is-active {
+  background: var(--green-primary);
+  color: #fff;
+}
+
+.explore__list {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}

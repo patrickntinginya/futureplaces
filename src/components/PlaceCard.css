@@ -1,0 +1,104 @@
+.place-card {
+  display: block;
+  overflow: hidden;
+}
+
+.place-card__image-wrap {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: var(--bg);
+}
+
+.place-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.place-card__save {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(18, 33, 28, 0.35);
+  backdrop-filter: blur(4px);
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.place-card__save.is-saved {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.place-card__badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.place-card__body {
+  padding: 12px 14px 14px;
+}
+
+.place-card__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.place-card__name {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.place-card__distance {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--green-primary);
+  flex-shrink: 0;
+}
+
+.place-card__meta {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+.place-card__rating {
+  color: #d9a400;
+  font-weight: 700;
+}
+
+.place-card__desc {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+.place-card__address {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12.5px;
+  color: var(--text-faint);
+  margin-top: 8px;
+}
+
+.place-card__actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
